@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Resmi Kelurahan Mranggen</title>
+    <link rel="stylesheet" href="style.css">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar container">
+            <div class="logo">
+                <h2>Kelurahan Mranggen</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" onclick="switchTab(event, 'home')">Home</a></li>
+                    <li><a href="#" class="nav-link" onclick="switchTab(event, 'profil')">Profil</a></li>
+                    <li><a href="#" class="nav-link" onclick="switchTab(event, 'galeri')">Galeri</a></li>
+                   <li><a href="#" class="nav-link" onclick="switchTab(event, 'peta')">Peta Lokasi</a></li>
+                    <li><a href="#" class="nav-link btn-nav" onclick="switchTab(event, 'unduhan')">Unduhan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <div class="container hero-text">
+                    <h1>Selamat Datang di Website Kelurahan Mranggen</h1>
+                    <p>Desa yang maju, bersatu, dan berdaya — mewujudkan masyarakat sejahtera di tengah alam yang lestari.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-orange" onclick="switchTab(event, 'profil')">📄 Profil Desa</a>
+                        <a href="#" class="btn btn-outline" onclick="switchTab(event, 'unduhan')">📥 Unduh Dokumen</a>
+                    </div>
+            
+            <div class="stats container">
+                <div class="stat-item">
+                    <h3>5.129</h3>
+                    <p>PENDUDUK</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1.758</h3>
+                    <p>KEPALA KELUARGA</p>
+                </div>
+                <div class="stat-item">
+                    <h3>17</h3>
+                    <p>DUSUN</p>
+                </div>
+                <div class="stat-item">
+                    <h3>270 Ha</h3>
+                    <p>LUAS WILAYAH</p>
+                </div>
+        </section>
+
+        <section id="profil" class="tab-content container section-padding">
+            <h2 class="section-title">Profil Desa</h2>
+            <div class="profil-grid">
+                <div class="profil-desc">
+                    <p></p>Desa Mranggen menurut cerita adalah berasal dari kata Marangi yang artinya mencuci atau membersihkan dan Nggen yang artinya tempat. Konon Desa Mranggen  adalah merupakan tempat atau Desa yang digunakan untuk tempat mencuci atau membersihkan pusaka utamanya keris. Pada jaman kerajaan dulu di Desa Mranggen ada seorang Kyai yang bernama Kyai Mranggi yang menurut cerita para sesepuh mempunyai pekerjaan sebagai seorang yang suka membersihkan atau mencuci benda-benda pusaka kerajaan utamanya berupa keris. Karena kepiaweannya Kyai Mranggi terkenal sampai ke keraton Surakarta dan Yogyakarta, untuk mengabadikan namanya tersebut maka tempat Kyai Mranggi tinggal disebut Desa Mranggen.</p>
+                    <p>Mayoritas warga Mranggen rata-rata bermata pencaharian sebagai petani, dan pedagang.</p>
+                    <p>Kelurahan Mranggen berkomitmen membangun desa yag mandiri, dan berkelanjutan dengan memanfaatkan potensi alam, budaya, dan kebersamaaan masyarakat.</p>
+                </div>
+                <div class="profil-table-wrapper">
+                    <table class="profil-table">
+                        <tr><td>Kepala Desa</td><td>Sutarman</td></tr>
+                        <tr><td>Kecamatan</td><td>Jatinom</td></tr>
+                        <tr><td>Kabupaten</td><td>Klaten</td></tr>
+                        <tr><td>Provinsi</td><td>Jawa Tengah</td></tr>
+                        <tr><td>Kode Pos</td><td>57481</td></tr>
+                        <tr><td>Luas Wilayah</td><td>270 Hektar</td></tr>
+                        <tr><td>Email</td><td>desamranggen17@gmail.com</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+       <section id="galeri" class="tab-content container section-padding">
+
+    <h2 class="section-title">Foto Desa</h2>
+
+    <div class="galeri-grid">
+        <img src="gambar/foto1.jpg" alt="">            <img src="gambar/foto2.jpg" alt="">
+           <p>UMBUL KROMAN</p>                                                <P>WATU SIGONG</P>
+       
+    </div>
+
+    <h2 class="section-title kegiatan-title">Foto Event Dan Kegiatan Desa</h2>
+
+    <div class="galeri-grid">
+        <img src="gambar/foto3.jpg" alt="">                         <img src="gambar/foto4.jpg" alt="">
+        <P>DOKUMENTASI LOMBA KEUNIKAN BAJU</P>                <P>PEMBUKAAN WAYANGAN OLEH PAK KEPALA DESA </P>
+
+        <img src="gambar/foto5.jpg" alt="">                         <img src="gambar/foto7.jpg" alt="">
+        <P>DOKUMENTASI PENTAS SENI ANTAR DESA</P>                     <P>IBU-IBU PKK</P>
+
+    </div>
+
+</section>
+    </div>
+</section>
+
+<section id="peta" class="tab-content container section-padding">
+
+    <h2 class="section-title">
+        Lokasi Desa Mranggen
+    </h2>
+
+    <div class="map-container">
+
+        <iframe 
+            src="https://www.google.com/maps?q=Desa+Mranggen+Jatinom+Klaten&output=embed"
+            width="100%" 
+            height="450" 
+            style="border:0; border-radius:15px;"
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+        <section id="unduhan" class="tab-content section-padding bg-light">
+            <div class="container">
+                <span class="sub-title">✦ BERKAS RESMI</span>
+                <h2 class="section-title left-align">Pusat Unduhan</h2>
+                
+                <div class="download-grid">
+                    <div class="download-card">
+                        <div class="card-body">
+                            <div class="card-icon icon-jpg">🖼️</div>
+                            <div class="card-text">
+                                <h3>Flyer Desa Mranggen 2026</h3>
+                                <p>Flyer Desa Mranggen mengenai waktu, tempat, dan perlombaan.</p>
+                                <span class="badge badge-jpg">JPG</span>
+                                <a href="gambar/FLYER KELURAAN.jpg" download class="btn-download">
+📥 Unduh Flyer
+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-card">
+                        <div class="card-body">
+                            <div class="card-icon icon-pdf">📄</div>
+                            <div class="card-text">
+                                <h3>Pengumuman Resmi Desa</h3>
+                                <p>Surat resmi mengenai jadwal acara.</p>
+                                <span class="badge badge-pdf">PDF</span>
+                                <a href="surat/Surat Resmi.pdf.pdf" download class="btn-download">
+📥 Unduh Dokumen
+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer> <div class="container footer-content"> <p>&copy; JL. Desa Mranggen, Kecamatan Jatinom, Kabupaten Klaten, Jawa Tengah
+        
+    </p>Kode Pos 57481.</p> </div> </footer>
+
+    <script>
+        function switchTab(event, tabId) {
+            event.preventDefault();
+            
+            // Sembunyikan semua konten section
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Hapus class active dari semua link navigasi
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => link.classList.remove('active'));
+            
+            // Tampilkan section yang dipilih
+            document.getElementById(tabId).classList.add('active');
+            
+            // Tambahkan class active ke menu yang sedang diklik
+            event.currentTarget.classList.add('active');
+            
+            // Otomatis scroll ke atas setelah klik menu
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
